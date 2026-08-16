@@ -3,6 +3,8 @@ import { HeroSection } from '../components/HeroSection'
 import { ServicesSection } from '../components/ServicesSection'
 import { StorySection } from '../components/StorySection'
 import { PromoStrip } from '../components/PromoStrip'
+import { TestimonialsSection } from '../components/TestimonialsSection'
+import { Footer } from '../components/Footer'
 import { navItems, services, stats } from '../data/siteData'
 
 export function LandingPage() {
@@ -13,14 +15,12 @@ export function LandingPage() {
       <main className="page-content">
         <HeroSection stats={stats} />
         <ServicesSection services={services} />
-        <StorySection />
         <PromoStrip />
+        <StorySection />
+        <TestimonialsSection />
       </main>
 
-      <footer className="site-footer">
-        <p>Razor &amp; Rumble</p>
-        <p>17 Queen Charlotte St • Bristol, BS1 4HW</p>
-      </footer>
+      <Footer />
     </div>
   )
 }

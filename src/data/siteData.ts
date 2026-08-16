@@ -19,17 +19,17 @@ export const stats: Stat[] = [
 
 export const services: Service[] = [
   {
-    icon: '✂️',
+    icon: 'scissors',
     title: 'Signature Cut',
     text: 'Precision scissor work and clean fade lines finished with a tailored hot towel.',
   },
   {
-    icon: '🧔',
+    icon: 'beard',
     title: 'Beard Sculpt',
     text: 'Balanced beard shaping, detailing, and conditioning designed for your face shape.',
   },
   {
-    icon: '💈',
+    icon: 'razor',
     title: 'VIP Grooming',
     text: 'Full-service package with a wash, cut, shave, and a straight razor finish.',
   },
