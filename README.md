@@ -1,75 +1,68 @@
-# React + TypeScript + Vite
+# Barber Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A polished barber-shop landing page concept built around a simple idea: the website should feel as considered as the cut. Bold typography, warm editorial styling, clear service cards, and a confident visual hierarchy give this fictional downtown shop a distinct identity.
 
-Currently, two official plugins are available:
+This is a frontend portfolio project by **YoichiDev-tech**. The shop, its statistics, and testimonials are demonstration content—not a verified real business.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What’s included
 
-## React Compiler
+- Responsive React landing page structure
+- Hero section with primary and secondary calls to action
+- Service cards for Signature Cut, Beard Sculpt, and VIP Grooming
+- Story/about section and promotional strip
+- Demonstration testimonials
+- Reusable header, section, and footer components
+- Centralized navigation, service, and statistic data
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the ESLint configuration
+- React 19
+- TypeScript
+- Vite 8
+- CSS
+- ESLint
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Run locally
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Requirements:** Node.js compatible with the installed Vite version and npm.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Vite prints the local development URL in the terminal.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Available scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the local development server |
+| `npm run build` | Type-check and create a production build |
+| `npm run lint` | Run ESLint |
+| `npm run preview` | Preview the production build locally |
 
+## Project structure
+
+```text
+src/
+├── components/   # Header, hero, services, story, promo, testimonials, footer
+├── data/         # Navigation items, service content, and display statistics
+├── pages/        # Landing page composition
+├── App.tsx       # App entry component
+├── App.css       # Landing page styling
+├── index.css     # Global styles
+└── main.tsx      # React entry point
 ```
+
+## Current scope
+
+This repository is a visual frontend concept, not a production booking system. The booking and navigation calls to action are presentation UI; no appointment service, backend, payment flow, or real customer-data handling is configured. The shop details and testimonial content are illustrative and should be replaced with verified information before any real-world launch.
+
+## Design direction
+
+The experience pairs classic barbershop cues with a clean, modern layout: strong headlines, compact service descriptions, generous spacing, and clear actions. The goal is to make the concept feel premium without making the interface noisy.
+
+## License
+
+No license has been declared for this repository yet. Contact the repository owner before reusing or redistributing the code.
