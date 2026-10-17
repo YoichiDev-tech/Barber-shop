@@ -2,10 +2,8 @@ import { Header } from '../components/Header'
 import { HeroSection } from '../components/HeroSection'
 import { ServicesSection } from '../components/ServicesSection'
 import { StorySection } from '../components/StorySection'
-import { PromoStrip } from '../components/PromoStrip'
-import { TestimonialsSection } from '../components/TestimonialsSection'
 import { Footer } from '../components/Footer'
-import { navItems, services, stats } from '../data/siteData'
+import { navItems, services } from '../data/siteData'
 
 export function LandingPage() {
   return (
@@ -13,11 +11,9 @@ export function LandingPage() {
       <Header items={navItems} />
 
       <main className="page-content">
-        <HeroSection stats={stats} />
+        <HeroSection />
         <ServicesSection services={services} />
-        <PromoStrip />
         <StorySection />
-        <TestimonialsSection />
       </main>
 
       <Footer />
