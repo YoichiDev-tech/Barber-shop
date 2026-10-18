@@ -1,20 +1,12 @@
-export type Stat = {
-  number: string
-  label: string
-}
-
 export type Service = {
   icon: string
   title: string
   text: string
 }
 
-export const navItems = ['Services', 'Gallery', 'Reviews', 'Location']
-
-export const stats: Stat[] = [
-  { number: '12+', label: 'Years shaping fades' },
-  { number: '4.9/5', label: 'Client rating' },
-  { number: '7am-7pm', label: 'Open daily' },
+export const navItems = [
+  { label: 'Services', href: '#services' },
+  { label: 'Our approach', href: '#story' },
 ]
 
 export const services: Service[] = [
@@ -31,6 +23,6 @@ export const services: Service[] = [
   {
     icon: 'razor',
     title: 'VIP Grooming',
-    text: 'Full-service package with a wash, cut, shave, and a straight razor finish.',
+    text: 'A full-service grooming concept with a wash, cut, shave, and straight-razor finish.',
   },
 ]

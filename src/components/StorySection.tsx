@@ -1,25 +1,26 @@
 export function StorySection() {
   return (
-    <section className="story">
-      <div className="story-image" aria-label="Barber shop interior" />
+    <section className="story" id="story">
+      <div className="story-image" role="img" aria-label="Barbershop interior" />
 
       <div className="story-copy">
-        <p className="section-label">Why choose us</p>
+        <p className="section-label">The approach</p>
         <h2>Classic technique. Modern confidence.</h2>
         <p>
-          We blend old-school craftsmanship with a sharp, contemporary finish —
-          clean fades, precise lines, and a consultation that fits your style.
+          This fictional barbershop concept pairs old-school craftsmanship
+          with a sharp, contemporary finish — clean fades, precise lines, and
+          a considered experience.
         </p>
 
         <ul className="feature-list">
-          <li>Consultation-based cuts tailored to your features</li>
-          <li>Premium grooming products and hot towel finish</li>
-          <li>Relaxed atmosphere with a true neighborhood feel</li>
+          <li>Consultation-led cuts shaped around personal style</li>
+          <li>Clean fades and careful detailing</li>
+          <li>A relaxed, considered grooming experience</li>
         </ul>
 
-        <button type="button" className="primary-btn">
-          Get a fresh cut
-        </button>
+        <a href="#services" className="primary-btn">
+          Explore services
+        </a>
       </div>
     </section>
   )

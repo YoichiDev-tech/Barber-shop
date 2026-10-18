@@ -1,11 +1,16 @@
+type NavItem = {
+  label: string
+  href: string
+}
+
 type HeaderProps = {
-  items: string[]
+  items: NavItem[]
 }
 
 export function Header({ items }: HeaderProps) {
   return (
     <header className="topbar">
-      <div className="brand" aria-label="Razor and Rumble barber shop logo">
+      <div className="brand" aria-label="Razor and Rumble demo logo">
         <div className="brand-mark">R</div>
         <div className="brand-copy">
           <span>Razor</span>
@@ -15,15 +20,15 @@ export function Header({ items }: HeaderProps) {
 
       <nav className="main-nav" aria-label="Main navigation">
         {items.map((item) => (
-          <a key={item} href="#services" className="nav-link">
-            {item}
+          <a key={item.label} href={item.href} className="nav-link">
+            {item.label}
           </a>
         ))}
       </nav>
 
-      <button type="button" className="book-button">
-        Book now
-      </button>
+      <a href="#services" className="book-button">
+        Explore services
+      </a>
     </header>
   )
 }

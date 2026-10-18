@@ -1,18 +1,14 @@
-# Barber Shop
+# Barber Shop Website Concept
 
-A polished barber-shop landing page concept built around a simple idea: the website should feel as considered as the cut. Bold typography, warm editorial styling, clear service cards, and a confident visual hierarchy give this fictional downtown shop a distinct identity.
-
-This is a frontend portfolio project by **YoichiDev-tech**. The shop, its statistics, and testimonials are demonstration content—not a verified real business.
+A fictional barbershop landing-page concept built by **PrismWave Studio** to demonstrate responsive frontend design and implementation. The business name, service descriptions, and visual content are illustrative demo material.
 
 ## What’s included
 
-- Responsive React landing page structure
-- Hero section with primary and secondary calls to action
-- Service cards for Signature Cut, Beard Sculpt, and VIP Grooming
-- Story/about section and promotional strip
-- Demonstration testimonials
-- Reusable header, section, and footer components
-- Centralized navigation, service, and statistic data
+- Responsive React landing page
+- Reusable header, hero, service, story, and footer components
+- Service cards and clear in-page navigation
+- Barbershop imagery loaded from Unsplash
+- Honest demo labeling without fabricated location, contact details, opening status, statistics, offers, or testimonials
 
 ## Tech stack
 
@@ -46,8 +42,8 @@ Vite prints the local development URL in the terminal.
 
 ```text
 src/
-├── components/   # Header, hero, services, story, promo, testimonials, footer
-├── data/         # Navigation items, service content, and display statistics
+├── components/   # Header, hero, services, story, and footer
+├── data/         # Navigation and service content
 ├── pages/        # Landing page composition
 ├── App.tsx       # App entry component
 ├── App.css       # Landing page styling
@@ -57,11 +53,9 @@ src/
 
 ## Current scope
 
-This repository is a visual frontend concept, not a production booking system. The booking and navigation calls to action are presentation UI; no appointment service, backend, payment flow, or real customer-data handling is configured. The shop details and testimonial content are illustrative and should be replaced with verified information before any real-world launch.
+This is a frontend demo, not a real barbershop website or booking system. No appointment service, backend, payment flow, or real customer-data handling is configured. Do not present the concept's business identity or service content as a real client or operating business.
 
-## Design direction
-
-The experience pairs classic barbershop cues with a clean, modern layout: strong headlines, compact service descriptions, generous spacing, and clear actions. The goal is to make the concept feel premium without making the interface noisy.
+The photos are loaded from Unsplash URLs in the stylesheet and therefore require an internet connection. No local photo assets have been added.
 
 ## License
 
